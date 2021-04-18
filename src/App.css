@@ -4,6 +4,8 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 body {
@@ -11,6 +13,10 @@ body {
 }
 
 /********************  NAVBAR  **********************/
+
+nav {
+  z-index: 2;
+}
 
 .logo {
   width: 8.25rem;
@@ -41,10 +47,99 @@ nav ul li {
   height: 3.5rem !important;
 }
 
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus  {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/********************  HEADER  **********************/
+
+.header-wraper {
+  position: relative;
+  background: url(wall-and-laptop-background7.jpg) no-repeat;
+  background-size: cover;
+  /* opacity: 0.96; */
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed" sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  font-weight: 630;
+  text-transform: uppercase;
+}
+
+/*-------------  TYPED TEXTS  ----------------*/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media(max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/*-------------  HEADER MAIN OFFER BUTTON ----------------*/
+
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  font-size: large;
+  border-radius: 0;
+  font-weight: 600;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/*-------------  PARTICLES JS ----------------*/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width:768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
