@@ -12,6 +12,14 @@
     z-index: 9;
   }
   
+  .skills-box {
+    width: 80%;
+    background-color: transparent;
+    /* #f8fa96e5; */
+    position: relative;
+    z-index: 9;
+  }
+
   .particles-box {
     position: absolute;
     top: 0;
