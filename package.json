@@ -18,6 +18,7 @@
     "react-particles-js": "^3.4.1",
     "react-reveal": "^1.2.2",
     "react-scripts": "4.0.3",
+    "react-tilt": "^0.1.4",
     "react-typed": "^1.2.0",
     "styled-components": "^5.2.3",
     "typewriter-effect": "^2.17.0",

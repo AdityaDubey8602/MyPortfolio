@@ -17,13 +17,13 @@ const About = () => {
                 <Container>
                     <Row className="pt-3 pb-5 align-items-center">
                         {/* Profile Pic */}
-                        <Col xs={12} md={6}>
+                        <Col xs={12} md={5}>
                             <Row className="justify-content-center mb-2 mr-2 ">
                                 <Image className="profile justify-content-end" alt="profile" src={Profile} thumbnail fluid />
                             </Row>
                         </Col>
                         {/* About Me Description */}
-                        <Col xs={12} md={6}>
+                        <Col xs={12} md={7}>
                             <Row className=" align-items-start p-2 my-details rounded">
                                 {/* Description */}
                                 Hi there! I am <strong>&nbsp;Aditya Dubey</strong>
