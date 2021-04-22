@@ -14,22 +14,42 @@ import Experience from "./pages/experience/experience.component";
 import Projects from "./components/projects-timeline/projects-timeline.component";
 import Contact from "./pages/contact-form/contact-form.component";
 import Footer from "./components/footer/footer.component";
-import Particles from "react-particles-js";
-import { particlesOptions } from "./particlesOptions";
 
 import './App.css';
 
 
 const App = () => {
+
   return (
+
     <div style={{ position: "relative" }}>
+      {/* <Particles
+        className="particles-canvas"
+        params={
+          {
+            particles: {
+              number: {
+                value: 30,
+                density: {
+                  enable: true,
+                  value_area: 900,
+                }
+              },
+              shape: {
+                type: "circle",
+                stroke: {
+                  width: 6,
+                  color: "#f9ab00"
+                }
+              }
+            }
+          }
+        }
+      /> */}
       <MyNavbar />
       <MyCarousel />
       <TitleMessage />
-      <Particles
-        className="particles particles-box"
-        params={particlesOptions}
-      />
+
 
       {/* about me section */}
       <div>
@@ -66,7 +86,7 @@ const App = () => {
       {/* Projects Section */}
       <div>
         <Container className="skills-box rounded">
-          <Slide bottom duration={500}>
+          <Slide bottom duration={200}>
             <hr />
             <Projects />
           </Slide>
