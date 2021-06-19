@@ -31,7 +31,7 @@ const About = () => {
                                 <br />
                                 I am currently pursuing Engineering with specialization in 'Computer Science'.
                                 <br />
-                                I have done an internship for 2 months as a flutter Developer at insellers and currently, I am working as an intern in BITS24 as a flutter developer.
+                                I have done an internship for 2 months as a flutter Developer at insellers and currently, I am working as an intern in BITS42 as a flutter developer.
                                 Working with the clients, my goal is always driven towards providing amazing experience with the best level of quality and service to them.
                                 <br />
                                 Along with that, I also love to sketch. It's my hobby and this is the thing that I love to do in my spare time.
